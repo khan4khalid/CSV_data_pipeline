@@ -1,8 +1,8 @@
 # CSV Data Pipeline
 
 A modular CSV ETL pipeline built with Python for data engineering practice.
-
 Project Structure : 
+
 csv_data_pipeline/
 │
 ├── data/
@@ -35,7 +35,7 @@ Features
 
 Installation
 
-1. Clone the repo:
+Clone the repo:
 
 bash
 git clone https://github.com/<your-username>/csv_data_pipeline.git
