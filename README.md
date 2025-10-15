@@ -3,7 +3,9 @@
 A modular **CSV ETL pipeline** built with Python for data engineering practice.  
 This project demonstrates **loading, cleaning, transforming, validating, and saving CSV data** in a scalable and modular way.
 
----
+<details>
+  <summary>Project Structure</summary>
+
 
 ## Project Structure
 
@@ -22,10 +24,8 @@ csv_data_pipeline/
 ├── main.py # Script to run full pipeline
 └── requirements.txt # Project dependencies
 
-yaml
-Copy code
 
----
+</details>
 
 ## Features
 
