@@ -1,0 +1,36 @@
+order_id,customer_name,product,quantity,price,order_date
+ORD1000,Jane,Monitor,three,Twenty Thousand,2025-01-01
+ORD1001,,Laptop,three,,2025-01-02
+ORD1002,,,2,1000,
+ORD1003,Micheal,,4,1500,2025-01-04
+ORD1004,John,Monitor,three,20000,2025-01-05
+ORD1005,Jane,,,1000,2025-01-06
+ORD1006,Amit,Mouse,1,,2025-01-07
+ORD1007,JANE,Keybord,3,,
+ORD1008,John,Keybord,,,2025-01-09
+ORD1009,,Monitor,1,1000,2025-01-10
+ORD1010,Sara,keyboard,1,1000,2025-01-11
+ORD1011,JANE,Laptop,4,20000,2025-01-12
+ORD1012,Micheal,,2,Twenty Thousand,2025-01-13
+ORD1013,Amit,Monitor,2,1000,2025-01-14
+ORD1014,Sara,Keybord,4,Twenty Thousand,2025-01-15
+ORD1015,Amit,Monitor,three,25000,2025-01-16
+ORD1016,Sara,Keybord,three,20000,2025-01-17
+ORD1017,,keyboard,three,1000,2025-01-18
+ORD1018,,Keybord,,,2025-01-19
+,Micheal,,,,2025-01-20
+ORD1020,JANE,,3,1500,2025-01-21
+ORD1021,john,Mouse,,Twenty Thousand,2025-01-22
+ORD1022,Amit,,three,20000,2025-01-23
+ORD1023,Micheal,Monitor,3,1000,
+ORD1024,Jane,,3,1500,
+ORD1025,John,Laptop,,1500,2025-01-26
+ORD1026,JANE,Laptop,4,25000,2025-01-27
+ORD1027,John,Keybord,2,1500,2025-01-28
+ORD1028,Sara,Mouse,,25000,2025-01-29
+ORD1029,,Laptop,,Twenty Thousand,2025-01-30
+,John,Keybord,2,1500,2025-01-28
+ORD1015,Amit,Monitor,three,25000,2025-01-16
+,Micheal,Monitor,3,1000,2025-01-24
+,,keyboard,three,1000,2025-01-18
+ORD1008,John,Keybord,,1500,2025-01-09

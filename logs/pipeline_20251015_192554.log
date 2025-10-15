@@ -1,0 +1,54 @@
+2025-10-15 19:25:54 - MainPipeline - INFO - === ETL Pipeline Started ===
+2025-10-15 19:25:54 - DataLoader - INFO - Attempting to load CSV: data/raw/raw_sales_data.csv
+2025-10-15 19:25:54 - SchemaValidator - INFO - Validating schema for file: data/raw/raw_sales_data.csv
+2025-10-15 19:25:54 - SchemaValidator - WARNING - Extra columns found: ['order_date']
+2025-10-15 19:25:54 - SchemaValidator - WARNING - Column 'order_id' has dtype 'object', expected 'int64'
+2025-10-15 19:25:54 - SchemaValidator - WARNING - Column 'quantity' has dtype 'object', expected 'float64'
+2025-10-15 19:25:54 - DataLoader - INFO - CSV loaded successfully with 35 rows and 6 columns.
+2025-10-15 19:25:54 - SchemaValidator - INFO - Validating schema for file:    order_id customer_name   product quantity            price  order_date
+0   ORD1000          Jane   Monitor    three  Twenty Thousand  2025-01-01
+1   ORD1001           NaN    Laptop    three              NaN  2025-01-02
+2   ORD1002           NaN       NaN        2             1000         NaN
+3   ORD1003       Micheal       NaN        4             1500  2025-01-04
+4   ORD1004          John   Monitor    three            20000  2025-01-05
+5   ORD1005          Jane       NaN      NaN             1000  2025-01-06
+6   ORD1006          Amit     Mouse        1              NaN  2025-01-07
+7   ORD1007          JANE   Keybord        3              NaN         NaN
+8   ORD1008          John   Keybord      NaN              NaN  2025-01-09
+9   ORD1009           NaN   Monitor        1             1000  2025-01-10
+10  ORD1010          Sara  keyboard        1             1000  2025-01-11
+11  ORD1011          JANE    Laptop        4            20000  2025-01-12
+12  ORD1012       Micheal       NaN        2  Twenty Thousand  2025-01-13
+13  ORD1013          Amit   Monitor        2             1000  2025-01-14
+14  ORD1014          Sara   Keybord        4  Twenty Thousand  2025-01-15
+15  ORD1015          Amit   Monitor    three            25000  2025-01-16
+16  ORD1016          Sara   Keybord    three            20000  2025-01-17
+17  ORD1017           NaN  keyboard    three             1000  2025-01-18
+18  ORD1018           NaN   Keybord      NaN              NaN  2025-01-19
+19      NaN       Micheal       NaN      NaN              NaN  2025-01-20
+20  ORD1020          JANE       NaN        3             1500  2025-01-21
+21  ORD1021          john     Mouse      NaN  Twenty Thousand  2025-01-22
+22  ORD1022          Amit       NaN    three            20000  2025-01-23
+23  ORD1023       Micheal   Monitor        3             1000         NaN
+24  ORD1024          Jane       NaN        3             1500         NaN
+25  ORD1025          John    Laptop      NaN             1500  2025-01-26
+26  ORD1026          JANE    Laptop        4            25000  2025-01-27
+27  ORD1027          John   Keybord        2             1500  2025-01-28
+28  ORD1028          Sara     Mouse      NaN            25000  2025-01-29
+29  ORD1029           NaN    Laptop      NaN  Twenty Thousand  2025-01-30
+30      NaN          John   Keybord        2             1500  2025-01-28
+31  ORD1015          Amit   Monitor    three            25000  2025-01-16
+32      NaN       Micheal   Monitor        3             1000  2025-01-24
+33      NaN           NaN  keyboard    three             1000  2025-01-18
+34  ORD1008          John   Keybord      NaN             1500  2025-01-09
+2025-10-15 19:25:54 - SchemaValidator - ERROR - Schema validation failed: argument of type 'method' is not iterable
+2025-10-15 19:25:54 - MainPipeline - WARNING - Schema validation failed. Proceeding with caution.
+2025-10-15 19:25:54 - DataCleaner - INFO - Starting data cleaning...
+2025-10-15 19:25:54 - DataCleaner - INFO - Removed 1 duplicate rows.
+2025-10-15 19:25:54 - DataCleaner - WARNING - Found 38 missing values. Filling numeric with 0, string with 'Unknown'.
+2025-10-15 19:25:54 - DataCleaner - INFO - Data cleaning completed successfully.
+2025-10-15 19:25:54 - DataTransformer - INFO - Starting data transformation...
+2025-10-15 19:25:54 - DataTransformer - INFO - Data transformation completed successfully.
+2025-10-15 19:25:54 - DataSaver - INFO - Starting data saving process...
+2025-10-15 19:25:54 - DataSaver - INFO - Data saved successfully at: data/processed\cleaned_data.csv
+2025-10-15 19:25:54 - MainPipeline - INFO - === ETL Pipeline Completed Successfully ===

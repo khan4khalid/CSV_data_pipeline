@@ -1,0 +1,11 @@
+{
+  "columns": {
+    "order_id": "int64",
+    "customer_name": "object",
+    "product": "object",
+    "quantity": "float64",
+    "price": "object"
+
+  }
+}
+
