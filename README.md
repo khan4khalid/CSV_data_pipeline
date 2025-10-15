@@ -2,8 +2,6 @@
 
 A modular CSV ETL pipeline built with Python for data engineering practice.
 
-
-
 Project Structure : 
 csv_data_pipeline/
 │
