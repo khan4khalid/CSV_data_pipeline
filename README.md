@@ -1,6 +1,7 @@
 # CSV Data Pipeline
 
-A modular CSV ETL pipeline built with Python for data engineering practice.
+A modular **CSV ETL pipeline** built with Python for data engineering practice.  
+This project demonstrates **loading, cleaning, transforming, validating, and saving CSV data** in a scalable and modular way.
 
 ---
 
@@ -21,32 +22,33 @@ csv_data_pipeline/
 ├── main.py # Script to run full pipeline
 └── requirements.txt # Project dependencies
 
-
+yaml
+Copy code
 
 ---
 
 ## Features
 
-- Load raw CSV data into Python DataFrames.
-- Clean and transform datasets (missing values, duplicates, type conversions, aggregations).
-- Validate schema before processing.
-- Save processed data to CSV or database.
-- Modular structure for easy scalability.
-- Logger for tracking pipeline activities.
+- Load raw CSV data into Python **DataFrames**.
+- Clean and transform datasets (handle **missing values, duplicates, type conversions, aggregations**).
+- **Validate schema** before processing to ensure data consistency.
+- Save processed data to **CSV** or **database**.
+- Modular structure for **easy scalability**.
+- **Logger** for tracking pipeline activities.
 
 ---
 
 ## Installation
 
 ```bash
-# Clone the repo
+# Clone the repository
 git clone https://github.com/<your-username>/csv_data_pipeline.git
 cd csv_data_pipeline
 
-# Create virtual environment
+# Create a virtual environment
 python -m venv venv
 
-# Activate environment
+# Activate the environment
 # Windows
 venv\Scripts\activate
 # Mac/Linux
@@ -54,5 +56,3 @@ source venv/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
-
-
