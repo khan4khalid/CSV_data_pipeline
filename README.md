@@ -1,58 +1,66 @@
 # CSV Data Pipeline
 
-A modular **CSV ETL pipeline** built with Python for data engineering practice.  
-This project demonstrates **loading, cleaning, transforming, validating, and saving CSV data** in a scalable and modular way.
+## Project Overview
 
-<details>
-  <summary>Project Structure</summary>
+This project is a complete, modular ETL pipeline for handling CSV data.  
+It demonstrates loading, cleaning, transforming, validating, and saving CSV datasets in Python, following best practices for data engineering projects.
 
+- **ETL Features:**
+    > Load raw CSV files into Python DataFrames  
+    > Clean missing values, duplicates, and type conversions  
+    > Transform columns and perform aggregations  
+    > Validate schema before processing  
+    > Save processed data to CSV or database  
 
-## Project Structure
+## Tech Stack
 
-csv_data_pipeline/
-├── data/
-│ ├── raw/ # Original CSV files
-│ └── processed/ # Cleaned and transformed output
-├── scripts/
-│ ├── data_loader.py # Load CSV files into DataFrames
-│ ├── data_cleaner.py # Clean missing values, duplicates, type conversions
-│ ├── data_transformer.py # Transform columns, feature engineering, aggregations
-│ ├── data_saver.py # Save cleaned data to CSV or database
-├── utils/
-│ ├── logger.py # Logger for all operations
-│ └── schema_validator.py # Validate schema, check column names/types
-├── main.py # Script to run full pipeline
-└── requirements.txt # Project dependencies
+- **Programming Language:** Python
+- **Data Handling:** pandas, numpy
+- **Logging:** Python logging module
+- **Schema Validation:** Custom validator
+- **Optional:** Database integration (SQLite/PostgreSQL)
 
+## Folder Structure
 
-</details>
+csv_data_pipeline/\
+│\
+├── data/\
+│   ├── raw/            # Original CSV files\
+│   └── processed/      # Cleaned and transformed output\
+│\
+├── scripts/\
+│   ├── data_loader.py      # Load CSV files into DataFrames\
+│   ├── data_cleaner.py     # Clean missing values, duplicates, type conversions\
+│   ├── data_transformer.py # Transform columns, feature engineering, aggregations\
+│   └── data_saver.py       # Save cleaned data to CSV or database\
+│\
+├── utils/\
+│   ├── logger.py           # Logger for all operations\
+│   └── schema_validator.py # Validate schema, check column names/types\
+│\
+├── main.py                 # Script to run full pipeline\
+└── requirements.txt        # Project dependencies
 
-## Features
+## Local Execution
 
-- Load raw CSV data into Python **DataFrames**.
-- Clean and transform datasets (handle **missing values, duplicates, type conversions, aggregations**).
-- **Validate schema** before processing to ensure data consistency.
-- Save processed data to **CSV** or **database**.
-- Modular structure for **easy scalability**.
-- **Logger** for tracking pipeline activities.
+You can run the pipeline in two ways: using a Python virtual environment or optionally integrating with a database.
 
----
-
-## Installation
+### Using Python Virtual Environment
 
 ```bash
-# Clone the repository
+# 1. Clone the repository
 git clone https://github.com/<your-username>/csv_data_pipeline.git
 cd csv_data_pipeline
 
-# Create a virtual environment
+# 2. Create and activate virtual environment
 python -m venv venv
-
-# Activate the environment
 # Windows
 venv\Scripts\activate
-# Mac/Linux
+# macOS/Linux
 source venv/bin/activate
 
-# Install dependencies
+# 3. Install dependencies
 pip install -r requirements.txt
+
+# 4. Run the pipeline
+python main.py
